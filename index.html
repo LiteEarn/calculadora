@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadoras Educacionais</title>
-    <meta name="google-adsense-account" content="ca-pub-1300030715628654">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+        </ul>
+    </nav>
     <h1>📚 Calculadoras para Estudantes</h1>
     <p>Ferramentas simples e rápidas para ajudar nos estudos.</p>
 </header>
@@ -16,44 +23,116 @@
 <main>
     <!-- Calculadora de Média -->
     <section class="card">
-        <h2>📘 Cálculo de Média Escolar</h2>
-        <input type="number" id="nota1" placeholder="Nota 1">
-        <input type="number" id="nota2" placeholder="Nota 2">
-        <input type="number" id="nota3" placeholder="Nota 3">
-        <button onclick="calcularMedia()">Calcular Média</button>
-        <p id="resultadoMedia"></p>
+        <div class="content-wrapper">
+            <div class="calculator-section">
+                <h2>📘 Cálculo de Média Escolar</h2>
+                <div class="explanation">
+                    <h3>O que é Média Escolar?</h3>
+                    <p>A média escolar, ou média aritmética, é uma medida estatística que representa o valor central de um conjunto de notas. Ela é calculada somando todas as notas e dividindo pelo número de avaliações, fornecendo uma visão geral do desempenho do aluno.</p>
+                    <h3>Como a Calculadora Funciona?</h3>
+                    <p>Insira as notas nos campos e clique em "Calcular Média". A fórmula usada é: (Nota1 + Nota2 + Nota3) / 3.</p>
+                    <h3>Importância no Dia a Dia</h3>
+                    <p>A média ajuda a monitorar o progresso acadêmico, identificar áreas de melhoria e é essencial para aprovações em escolas ou universidades. No dia a dia, conceitos semelhantes são usados em finanças, como calcular médias de gastos.</p>
+                </div>
+                <input type="number" id="nota1" placeholder="Nota 1">
+                <input type="number" id="nota2" placeholder="Nota 2">
+                <input type="number" id="nota3" placeholder="Nota 3">
+                <button onclick="calcularMedia()">Calcular Média</button>
+                <p id="resultadoMedia"></p>
+            </div>
+            <div class="ad-section" id="ad-media">
+                <h3>📣 Anúncio</h3>
+                <div id="ad-placeholder-media">
+                    <!-- Substitua por código do Google AdSense após aprovação -->
+                    <!-- Exemplo:
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=seu-client-id" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="seu-client-id" data-ad-slot="seu-ad-slot-media" data-ad-format="auto"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <p>Espaço reservado para anúncio. Registre-se no Google AdSense para ativar!</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Regra de 3 -->
     <section class="card">
-        <h2>📗 Regra de 3</h2>
-        <input type="number" id="valorA" placeholder="A">
-        <input type="number" id="valorB" placeholder="B">
-        <input type="number" id="valorC" placeholder="C">
-        <button onclick="calcularRegraDe3()">Calcular</button>
-        <p id="resultadoRegra3"></p>
+        <div class="content-wrapper">
+            <div class="calculator-section">
+                <h2>📗 Regra de 3</h2>
+                <div class="explanation">
+                    <h3>O que é Regra de 3?</h3>
+                    <p>A regra de três é um método matemático para resolver problemas de proporções, encontrando valores desconhecidos com base em relações diretas ou inversas entre grandezas.</p>
+                    <h3>Como a Calculadora Funciona?</h3>
+                    <p>Insira os valores A, B e C (onde A está para B assim como C está para X) e clique em "Calcular". A fórmula é: X = (B * C) / A para proporção direta.</p>
+                    <h3>Importância no Dia a Dia</h3>
+                    <p>É usada em situações reais como calcular descontos em compras, proporções em receitas culinárias ou consumo de combustível em viagens, ajudando a tomar decisões práticas.</p>
+                </div>
+                <input type="number" id="valorA" placeholder="A">
+                <input type="number" id="valorB" placeholder="B">
+                <input type="number" id="valorC" placeholder="C">
+                <button onclick="calcularRegraDe3()">Calcular</button>
+                <p id="resultadoRegra3"></p>
+            </div>
+            <div class="ad-section" id="ad-regra3">
+                <h3>📣 Anúncio</h3>
+                <div id="ad-placeholder-regra3">
+                    <!-- Substitua por código do Google AdSense após aprovação -->
+                    <!-- Exemplo:
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=seu-client-id" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="seu-client-id" data-ad-slot="seu-ad-slot-regra3" data-ad-format="auto"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <p>Espaço reservado para anúncio. Registre-se no Google AdSense para ativar!</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Conversão de Unidades -->
     <section class="card">
-        <h2>📙 Conversão de Unidades</h2>
-        <input type="number" id="valorConversao" placeholder="Valor">
-        <select id="tipoConversao">
-            <option value="km-m">Km → Metros</option>
-            <option value="m-km">Metros → Km</option>
-            <option value="kg-g">Kg → Gramas</option>
-            <option value="g-kg">Gramas → Kg</option>
-        </select>
-        <button onclick="converterUnidade()">Converter</button>
-        <p id="resultadoConversao"></p>
+        <div class="content-wrapper">
+            <div class="calculator-section">
+                <h2>📙 Conversão de Unidades</h2>
+                <div class="explanation">
+                    <h3>O que é Conversão de Unidades?</h3>
+                    <p>Conversão de unidades é o processo de transformar uma medida de uma unidade para outra equivalente, como de quilômetros para metros, usando fatores de conversão.</p>
+                    <h3>Como a Calculadora Funciona?</h3>
+                    <p>Insira o valor e selecione o tipo de conversão. Exemplo: Para Km → Metros, multiplica por 1000.</p>
+                    <h3>Importância no Dia a Dia</h3>
+                    <p>Essencial em ciências, engenharia e viagens, como converter receitas (gramas para kg) ou velocidades (km/h para m/s), evitando erros em cálculos cotidianos.</p>
+                </div>
+                <input type="number" id="valorConversao" placeholder="Valor">
+                <select id="tipoConversao">
+                    <option value="km-m">Km → Metros</option>
+                    <option value="m-km">Metros → Km</option>
+                    <option value="kg-g">Kg → Gramas</option>
+                    <option value="g-kg">Gramas → Kg</option>
+                </select>
+                <button onclick="converterUnidade()">Converter</button>
+                <p id="resultadoConversao"></p>
+            </div>
+            <div class="ad-section" id="ad-conversao">
+                <h3>📣 Anúncio</h3>
+                <div id="ad-placeholder-conversao">
+                    <!-- Substitua por código do Google AdSense após aprovação -->
+                    <!-- Exemplo:
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=seu-client-id" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="seu-client-id" data-ad-slot="seu-ad-slot-conversao" data-ad-format="auto"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <p>Espaço reservado para anúncio. Registre-se no Google AdSense para ativar!</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Seção de Anúncios (Google AdSense) -->
+    <!-- Seção Geral de Anúncios (Mantida) -->
     <section class="card" id="ad-section">
         <h2>📣 Anúncios</h2>
         <div id="ad-placeholder">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1300030715628654"
-                    crossorigin="anonymous"></script>
+            <!-- Substitua por código do Google AdSense após aprovação -->
+            <p>Espaço reservado para anúncio. Registre-se no Google AdSense para ativar!</p>
         </div>
     </section>
 </main>
