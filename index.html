@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras Educacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>📚 Calculadoras para Estudantes</h1>
+    <p>Ferramentas simples e rápidas para ajudar nos estudos.</p>
+</header>
+
+<main>
+    <!-- Calculadora de Média -->
+    <section class="card">
+        <h2>📘 Cálculo de Média Escolar</h2>
+        <input type="number" id="nota1" placeholder="Nota 1">
+        <input type="number" id="nota2" placeholder="Nota 2">
+        <input type="number" id="nota3" placeholder="Nota 3">
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <p id="resultadoMedia"></p>
+    </section>
+
+    <!-- Regra de 3 -->
+    <section class="card">
+        <h2>📗 Regra de 3</h2>
+        <input type="number" id="valorA" placeholder="A">
+        <input type="number" id="valorB" placeholder="B">
+        <input type="number" id="valorC" placeholder="C">
+        <button onclick="calcularRegraDe3()">Calcular</button>
+        <p id="resultadoRegra3"></p>
+    </section>
+
+    <!-- Conversão de Unidades -->
+    <section class="card">
+        <h2>📙 Conversão de Unidades</h2>
+        <input type="number" id="valorConversao" placeholder="Valor">
+        <select id="tipoConversao">
+            <option value="km-m">Km → Metros</option>
+            <option value="m-km">Metros → Km</option>
+            <option value="kg-g">Kg → Gramas</option>
+            <option value="g-kg">Gramas → Kg</option>
+        </select>
+        <button onclick="converterUnidade()">Converter</button>
+        <p id="resultadoConversao"></p>
+    </section>
+</main>
+
+<footer>
+    <p>Desenvolvido para ajudar estudantes 📖</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
