@@ -63,3 +63,10 @@ footer {
     background: #e2e6ea;
     margin-top: 20px;
 }
+#ad-section {
+    text-align: center;
+    margin: 20px 0;
+}
+#ad-placeholder {
+    padding: 10px;
+}
